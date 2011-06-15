@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def signup
-  	@title = "Sign out"
+  	@title = "Sign up"
   end
 
 end
