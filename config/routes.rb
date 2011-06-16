@@ -1,9 +1,11 @@
 BrowsergameTest::Application.routes.draw do
 	
+  get "users/new"
+
 	match '/signin' , :to => 'pages#signin'
-	match '/signup' , :to => 'pages#signup'
+	match '/signup' , :to => 'users#new'
 	
-	match '/', :to => 'pages#home'
+	root :to => 'pages#home'
 
   get "pages/home"
 
