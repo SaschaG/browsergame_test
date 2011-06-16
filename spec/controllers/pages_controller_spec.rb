@@ -35,18 +35,17 @@ describe PagesController do
     							:content => @base_title + " | Sign in")
 	end
   end
-
-  describe "GET 'signup'" do
+  
+  describe "GET 'contact'" do
     it "should be successful" do
-      get 'signup'
+      get 'contact'
       response.should be_success
     end
     
     it "should have the right title" do
-    	get 'signup'
+    	get 'contact'
     	response.should have_selector("title",
-    							:content => @base_title + " | Sign up")
+    							:content => @base_title + " | Contact")
 	end
   end
-
 end
