@@ -1,18 +1,26 @@
 class PagesController < ApplicationController
   def home
-	@title = "Home"
+	@title = "Startseite"
   end
 
   def signin
-  	@title = "Sign in"
-  end
-
-  def signup
-  	@title = "Sign up"
+  	@title = "Login"
   end
   
 	def contact
-  	@title = "Contact"
+  	@title = "Kontakt"
   end
-
+  
+  def help
+  	@title = "Hilfe"
+  end
+  
+  def rules
+  	@title = "Regeln"
+  end
+  
+  def links
+  	@title = "Links"
+  end
+  
 end

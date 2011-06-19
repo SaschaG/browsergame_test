@@ -88,13 +88,29 @@ a.signup_button {
   display: block;
   text-align: center;
   width: 190px;
-  color: #528B8B;
-  background: #C6E2FF;
-  font-size: 150%;
+  color: #ffffff;
+  background: #800;
+  font-size: 120%;
   font-weight: bold;
-  padding: 20px;
+  padding: 2px;
   border-style: groove;
-  border-width: 7px;
+  border-color: #528B8B;
+  border-width: 5px;
+}
+a.signup_button:hover {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 200px;
+  color: #ffffff;
+  background: #000080;
+  font-size: 130%;
+  font-weight: bold;
+  padding: 3px;
+  border-style: groove;
+  border-color: #528B8B;
+  border-width: 3px;
 }
 
 /* Round corners */

@@ -5,15 +5,12 @@ BrowsergameTest::Application.routes.draw do
 	match '/signin' , :to => 'pages#signin'
 	match '/signup' , :to => 'users#new'
 	match '/contact' , :to => 'pages#contact'
+	match '/help' , :to => 'pages#help'
+	match '/rules' , :to => 'pages#rules'
+	match '/links' , :to => 'pages#links'
 	
 	root :to => 'pages#home'
 
-  get "pages/home"
-
-  get "pages/signin"
-
-  get "pages/signup"
-  get "pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,12 +1,13 @@
 <header>
-  <% logo = image_tag("browsergame_test_banner.jpg", :alt => "Browsergame Test", :class => "round") %>
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Sign in", signin_path %></li>
-      <li><%= link_to "Sign up", signup_path %></li>
-	  <li><%= link_to "Contact", contact_path %></li>
+      <li><%= link_to "Startseite", root_path %></li>
+	  <li><%= link_to "Regeln", rules_path %></li>
+	  <li><%= link_to "Hilfe", help_path %></li>
+	  <li><%= link_to "Links", links_path %></li>
+      <li><%= link_to "Anmelden", signup_path %></li>
+      <li><%= link_to "Einloggen", signin_path %></li>
     </ul>
   </nav>
 </header>
