@@ -1,6 +1,5 @@
 BrowsergameTest::Application.routes.draw do
 	
-  get "users/new"
 
 	match '/signin' , :to => 'pages#signin'
 	match '/signup' , :to => 'users#new'
