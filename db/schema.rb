@@ -10,22 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20110626211430) do
-=======
-ActiveRecord::Schema.define(:version => 20110626200643) do
->>>>>>> moddeling-users
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
     t.string   "encrypted_password"
     t.string   "salt"
-=======
->>>>>>> moddeling-users
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
