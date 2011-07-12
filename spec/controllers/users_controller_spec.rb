@@ -112,7 +112,7 @@ describe "POST 'create'" do
         end.should change(User, :count).by(1)
       end
       
-      it "should sign the user in" do
+      it "should sign the user in" do 
         post :create, :user => @attr
         controller.should be_signed_in
       end
@@ -123,7 +123,7 @@ describe "POST 'create'" do
       end
       
       it "should have a welcome message" do
-        post :create, :user => @attr
+        post :create, :user => @attr 
         flash[:success].should =~ /Willkommen auf der Browsergame - Testseite!/i
       end 
     end
