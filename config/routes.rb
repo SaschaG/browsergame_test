@@ -1,8 +1,11 @@
 BrowsergameTest::Application.routes.draw do
 	resources :users
+	resources :sessions, :only => [:new, :create, :destroy]
 	
-	match '/signin' , :to => 'pages#signin'
 	match '/signup' , :to => 'users#new'
+	match '/signin',  :to => 'sessions#new'
+    match '/signout', :to => 'sessions#destroy'
+    match '/sessions', :to => 'sessions#create'
 	match '/contact' , :to => 'pages#contact'
 	match '/help' , :to => 'pages#help'
 	match '/rules' , :to => 'pages#rules'

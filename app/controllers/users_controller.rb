@@ -11,22 +11,16 @@ class UsersController < ApplicationController
     @title = "Anmeldung"
   end
   
-  def create
-  	@user = User.new(params[:user])
-  	if @user.save
-  		#Handle a successful save.
-  	else
-  		@title = "Anmeldung"
-  		render 'new'
-  	end
-  end
   
   def create
     @user = User.new(params[:user])
     if @user.save
+      sign_in @user
       flash[:success] = "Willkommen auf der Browsergame - Testseite!"
       redirect_to @user
     else
+      @user.password = ""
+      @user.password_confirmation = ""
       @title = "Anmeldung"
       render 'new'
     end

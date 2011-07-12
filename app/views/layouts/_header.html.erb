@@ -2,12 +2,19 @@
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
+      <% if signed_in? %>
+        <li><%= link_to "Profile", current_user %></li>
+      <% end %>
       <li><%= link_to "Startseite", root_path %></li>
 	  <li><%= link_to "Regeln", rules_path %></li>
 	  <li><%= link_to "Hilfe", help_path %></li>
 	  <li><%= link_to "Links", links_path %></li>
       <li><%= link_to "Anmelden", signup_path %></li>
+      <% if signed_in? %>
+      <li><%= link_to "Ausloggen", signout_path, :method => :delete %></li>
+      <% else %>
       <li><%= link_to "Einloggen", signin_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
