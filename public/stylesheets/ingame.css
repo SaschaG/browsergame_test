@@ -1,0 +1,225 @@
+.container {
+  	width: 1000px;
+  	margin : auto;
+}
+
+body {
+  	background: #292933;
+}
+
+header {
+	height:1px;
+	margin-top: 40px;
+}
+
+header img {
+  background: #000;
+}
+
+section {
+	color: #2F4F4F;
+  	margin-top: 17px;
+  	font-size: 120%;
+  	padding: 20px;
+  	background: #708090;
+}
+
+section h1 {
+  font-size: 200%;
+}
+h2{
+  color: #fff;
+  font-size: 100%
+}
+
+/* Links */
+
+a {
+  color: #79CDCD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #79CDCD;
+}
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: #708090;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #79CDCD;
+}
+
+nav ul li a:hover {
+	color: #069;
+  text-decoration: underline;
+}
+
+/* Sign up button */
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #ffffff;
+  background: #800;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 2px;
+  border-style: groove;
+  border-color: #528B8B;
+  border-width: 5px;
+}
+a.signup_button:hover {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 200px;
+  color: #ffffff;
+  background: #000080;
+  font-size: 130%;
+  font-weight: bold;
+  padding: 3px;
+  border-style: groove;
+  border-color: #528B8B;
+  border-width: 3px;
+}
+
+	/* Round corners */
+
+.round {
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+
+
+/* User show page */
+
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main{
+>>>>>>> moddeling-users
+  width: 70%;
+  padding: 1em;
+}
+
+
+td.sidebar{
+  width:30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+} 
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+.info a {color:#205791;}

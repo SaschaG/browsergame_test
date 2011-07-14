@@ -1,8 +1,47 @@
-<h1>Browsergame Test</h1>
+<table class="home">
+  <tr>
+    <td class="main">
+      
+      <h1>Browsergame Test</h1>
 
-<p>
-	This is a Testsite, for a Browsergame, i want to create in the future.
-</p>
+	  <p>
+		This is a Testsite for a Browsergame i want to create in the future.
+	  </p>
+	  
+	  <% if signed_in? %> 
+
+	  <% else %>
+  		<%= link_to "Jetzt Anmelden!", signup_path , :class => "signup_button round" %>
+	  <% end %>
+      
+    </td>
+    <td class="sidebar round">
+    
+        <h3>Log in</h3>
+	  
+	  	<%= form_for(:session, :url => sessions_path) do |f| %>
+	  	  <% if signed_in? %>
+	  	  
+	  	  	Hey! <br/>
+	  	  	Du bist bereits eingeloggt<br />
+	  	  	<%= link_to "Link zu deinem Profil", current_user %>
+	  	  <% else %>
+  	  		<div class="field">
+    	  	  <%= f.label :email %><br />
+    		  <%= f.text_field :email %>
+	  		</div>
+  	  		<div class="field">
+    	  	  <%= f.label :password %><br />
+    	  	  <%= f.password_field :password %>
+  	  		</div>
+  	  		<div class="actions">
+    	  	  <%= f.submit "Einloggen" %>
+  	  		</div>
+  	  		<% end %>
+	  	<% end %>
+    </td>
+  </tr>
+</table>
 
 
-<%= link_to "Jetzt Anmelden!", signup_path , :class => "signup_button round" %>
+

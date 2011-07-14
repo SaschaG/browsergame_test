@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
 	@title = "Startseite"
+	
   end
 
   def signin
@@ -21,6 +22,10 @@ class PagesController < ApplicationController
   
   def links
   	@title = "Links"
+  end
+  
+  def map 
+  	@title = "Karte"
   end
   
 end

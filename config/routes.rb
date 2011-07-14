@@ -10,6 +10,7 @@ BrowsergameTest::Application.routes.draw do
 	match '/help' , :to => 'pages#help'
 	match '/rules' , :to => 'pages#rules'
 	match '/links' , :to => 'pages#links'
+	match '/map' , :to => 'pages#map'
 	
 	root :to => 'pages#home'
 

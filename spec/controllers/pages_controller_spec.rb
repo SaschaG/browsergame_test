@@ -22,6 +22,19 @@ describe PagesController do
 	end
   end
 
+  
+  describe "GET 'map'" do
+    it "should be successful" do
+      get 'map'
+      response.should be_success
+    end
+    
+    it "should have the right title" do
+    	get 'map'
+    	response.should have_selector("title",
+    							:content => @base_title + " | Karte")
+	end
+  end
 
  
   
